@@ -1,0 +1,102 @@
+.container {
+    padding: 20px;
+    max-width: 95%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .titleContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .title {
+    font-size: 2em;
+    font-weight: bold;
+    position: relative;
+    padding: 0 20px;
+    text-align: center;
+  }
+  
+  .title::before,
+  .title::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 2px;
+    background-color: #0033a0;
+  }
+  
+  .title::before {
+    left: -60px;
+  }
+  
+  .title::after {
+    right: -60px;
+  }
+  
+  .subtitle {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  .servicesGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .serviceCard {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    word-spacing: 1;
+    font-size: 19px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .serviceCard h2 {
+    font-size: 1.5em;
+    margin: 20px 0 10px;
+    transition: color 0.3s;
+  }
+  
+  .serviceCard p {
+    color: #777;
+    transition: color 0.3s;
+  }
+  
+  .serviceCard i {
+    transition: color 0.3s;
+  }
+  
+  .serviceCard:hover {
+    background-color: #0033a0;
+    color: white;
+  }
+  
+  .serviceCard:hover h2,
+  .serviceCard:hover p,
+  .serviceCard:hover i,
+  .serviceCard:hover svg {
+    color: white;
+  }
+  
+  @media (min-width: 768px) {
+    .servicesGrid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .servicesGrid {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+  

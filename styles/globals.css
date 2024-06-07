@@ -1,0 +1,230 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  background: #fff;
+  color: #ffffff;
+}
+
+/* HomePage Css */
+
+.header {
+  padding: 10px;
+  background-color: #fff;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 70px; 
+  height: auto;
+}
+
+.logo-text {
+  font-size: 24px; 
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px; 
+}
+
+.nav-links li {
+  font-size: 18px; 
+}
+
+.nav-links a {
+  color: #0033a0;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .logo-text {
+    font-size: 18px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+}
+
+
+/* Hero Section CSS */
+.hero-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  background: #ffffff;
+}
+
+.hero-content {
+  max-width: 50%;
+  color: #14279B;
+}
+
+.hero-content h1 {
+  font-size: 50px;
+  font-family: 'Poppins', sans-serif;
+  color: #14279B;
+  font-weight: bold;
+}
+
+.hero-content p {
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.get-started-button {
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 40%;
+}
+
+.hero-image-container {
+  max-width: 50%;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+}
+
+
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: left;
+    font-size: 20px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    order: 2;
+    margin-top: 20px;
+  }
+
+  .hero-image-container {
+    max-width: 100%;
+    margin-top: 20px;
+    order: 1;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header nav ul {
+    flex-direction: column;
+  }
+
+  .hero-section h1 {
+    font-size: 36px;
+  }
+}
+
+.hero-image-container {
+  position: relative;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+/* LogoPage CSS */
+
+.logo-carousel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5fafd;
+  padding: 20px;
+}
+
+.logo-item {
+  flex: 1 1 100px;
+  max-width: 100px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .logo-item {
+    flex: 1 1 150px;
+    max-width: 150px;
+  }
+}
+@media (min-width: 1024px) {
+  .logo-item {
+    flex: 1 1 200px;
+    .logo-carousel {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      background-color: #f5fafd;
+      padding: 20px;
+    }
+    .logo-item {
+      flex: 1 1 100px;
+      max-width: 100px;
+      margin: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .grey-filter {
+      filter: grayscale(100%);
+    }
+    @media (min-width: 768px) {
+      .logo-item {
+        flex: 1 1 150px;
+        max-width: 150px;
+      }
+    }
+    @media (min-width: 1024px) {
+      .logo-item {
+        flex: 1 1 200px;
+        max-width: 200px;
+      }
+    }    max-width: 200px;
+  }
+}
+
